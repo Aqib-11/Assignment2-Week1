@@ -1,0 +1,49 @@
+#Loop Manipulation
+# Print first 10 natural numbers using while
+x = 1
+while x <=10:
+    print(x)
+    x += 1
+
+#Question No 2
+#Take Input from user, and print even number till that input number
+no = int(input("Input integer no to find even number upto it: "))
+if no % 2 != 0:
+        no -=1
+while (no >= 2):
+       print(no)
+       no -= 2
+
+#Question No 3
+# Take Input from user, and print odd number till that input number
+num = int(input("Enter a number and i will give odd number upto it: "))
+if num % 2 == 0:
+      num -= 1
+while (num >= 1):
+      print(num)
+      num -= 2
+
+#Question No 4
+#Take Input from user, and print prime number till that input number
+p_no = int(input("Enter a number to find prime no upto it: "))
+for i in range(2, p_no + 1):
+      for j in range(2, i):
+            if i % j == 0:
+                  break
+      else:
+       print(i,"is prime.")
+#Question No 5
+#Print multiplication table of a given number
+numb = int(input("Enter a number to find its table upto 10: "))
+number = 1
+while number <= 10:
+      # print("Table of ",numb, "is:", numb * number)
+      print(str(numb) + " * " + str(number) + " = " + str(numb * number))
+      number += 1
+
+
+
+    
+    
+
+
