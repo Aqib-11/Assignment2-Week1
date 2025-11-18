@@ -1,0 +1,31 @@
+#Dictionary Manipulation
+
+# #Question No 1
+#  Check if a value exists in a dictionary
+province_capital= {"punjab": "Lahore", "KPK": "Peshawar","Sindh":"Karachi"}
+#print(type(province_capital))
+#print(province_capital)
+for province in province_capital: #going through all provinces
+    capital = province_capital["punjab"] #printing that province capital if found
+print(capital)
+
+#print(dir(province_capital)) #method to check what we can apply on dictionary
+#print(help(province_capital))
+#a = {}
+#print(type(a))  #it will print class dict
+#a = {''}
+#print(type(a)) #it will print class set
+
+#Q No 2
+#Get the key of a minimum value from the following dictionary
+# std_roll = {"Ali": 1, "Obaid": 2, "Asad": 3}
+# for name in std_roll:
+#      min_value_key = std_roll[name]
+#      print(min_value_key)
+# print("The key of minimum number of student roll no dictionary is: ", )
+
+#Delete a list of keys from a dictionary
+std_roll = {"Ali": 1, "Obaid": 2, "Asad": 3}
+for name in std_roll:
+    del std_roll[name]
+    print(std_roll)
