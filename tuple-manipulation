@@ -1,0 +1,27 @@
+#Tuple Manipulation
+
+#Reverse a tuple
+cars = ('honda', 'suzuki','audi','toyota')
+print("I am tuple: ",cars)
+print("you can see my type is: ",type(cars))
+rev_car = cars[::-1]
+print("Tuple in reverse: ",rev_car)
+
+#Access value 20 from the tuple
+no = (10,20,30,40,50)
+print("I am tuple of numbers: ",no)
+print("i am value 20 from the tuple: ",no[1])
+for x in no: #additional work on tuple just to check
+    print(x, end = ",") #this end function print all in single line separated by comma
+
+#Swap two tuples in Python
+t1 = (1,2,3,4)
+print("\nt1 before swapping is",t1)
+t2 = ('a','b','c','d')
+print("t2 before swapping is",t2)
+temp = t1
+t1 = t2
+t2 = temp
+
+print("Now t1 after swapping is: ",t1)
+print("Now t2 after swapping is: ",t2)
